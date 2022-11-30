@@ -1,0 +1,27 @@
+CARS
+
+id - INT - PRIMARY_KEY(NOTNULL, UNIQUE) - AUTO_INCREMENT
+unicode - VARCHAR(10) - NOTNULL - UNIQUE (Potrebbe essere un codice univoco formato da lettere e numeri per poter catalogare internamente il veicolo in questione)
+brand - VARCHAR(30) - NOTNULL 
+model - VARCHAR(150) - NOTNULL 
+version - VARCHAR(30) - NULL
+engine - VARCHAR(20) - NOTNULL - (es. 1800TDI)
+fuel - VARCHAR(30) - (es. benzina/elettrico)
+shift - TINYINT - (es. true = manuale, false = automatico)
+car_doors - TINYINT - NOTNULL - DEFAULT(2)
+car_seats - TINYINT - NOTNULL - DEFAULT(1)
+car_traction - VARCHAR(15) - NOTNULL
+car_cv - SMALLINT - NULL
+car_kw - SMALLINT - NOTNULL
+fuel_consumption - VARCHAR(30) - NULL 
+car_weight_kg - SMALLINT - NULL
+car_length_m - FLOAT(5, 3) - NOTNULL
+car_heigth_m - FLOAT(5, 3) - NOTNULL
+car_width_m - FLOAT(5, 3) - NOTNULL
+car_condition - TINYINT - NOTNULL - (es true = nuovo, false = usato)
+car_date - DATE - NOTNULL - (data di immatricolazione)
+car_km - MEDIUMINT - NOTNULL - DEFAULT(0)
+car_emission - VARCHAR(20) - NOTNULL 
+car_type - VARCHAR(20) - NULL
+car_description - TEXT - NULL
+car_price - DECIMAL(10, 2) - NULL
